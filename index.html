@@ -8,7 +8,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- personal css -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>NYT Search</title>
 </head>
@@ -16,12 +16,12 @@
 
 <body>
     <div class="container" id="content">
-        <div class="row card" id="head"> 
-            <h1>NYT SEARCH</h1>
+        <div class="row justify-content-center rounded" id="head"> 
+            <h1 class ="text-center text-white"><i class="fas fa-newspaper"></i>NYT SEARCH</h1>
         </div>
         <div class="row card form" id="searchForm">
             <div class="card-header">
-            Search Parameters
+                <i class="far fa-address-card"></i>Search Parameters
               </div>
               <div class="card-body">
                 <h5 class="card-title">Search Term</h5>
@@ -40,18 +40,26 @@
                   </div>
                 
                 <h5 class="card-title">Start Year (optional)</h5>
-                <input class="form-control" type="text" placeholder="">
+                <input class="form-control" type="text" placeholder="e.g., 1900">
                 <br>
                 <h5 class="card-title">End Year (optional)</h5>
-                <input class="form-control" type="text" placeholder="">
+                <input class="form-control" type="text" placeholder="e.g., 1905">
                 <br>
-            
+                  <button class="btn btn-light" id="searchBtn"><i class="fas fa-binoculars"></i>Search</button>
+                  <button class="btn btn-light" id="clearBtn"><i class="fas fa-dumpster-fire"></i>Clear Results</button>
             </div>
-            
-        <div class="row card"id="results">
+        </div>  
+        <div class="row card mt-2"id="results">
             <!-- results will populate here upon retrieval -->
-        </div>
+            <div class="card-header">
+                <i class="fas fa-border-all"></i>Top Articles
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum velit nemo, non, rerum consequatur reiciendis explicabo perferendis eveniet eligendi itaque recusandae repellat exercitationem possimus sunt facere doloremque autem commodi. Debitis!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum velit nemo, non, rerum consequatur reiciendis explicabo perferendis eveniet eligendi itaque recusandae repellat exercitationem possimus sunt facere doloremque autem commodi. Debitis!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum velit nemo, non, rerum consequatur reiciendis explicabo perferendis eveniet eligendi itaque recusandae repellat exercitationem possimus sunt facere doloremque autem commodi. Debitis!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum velit nemo, non, rerum consequatur reiciendis explicabo perferendis eveniet eligendi itaque recusandae repellat exercitationem possimus sunt facere doloremque autem commodi. Debitis!
+            </p>
+        </div>  
     </div>
+    <hr>
+    <h6 class="text-center">Made with lots and lots and LOTS of <i class="fas fa-heart-broken"></i></h6>
 
     <footer>
         <!-- put feeet content here  -->
